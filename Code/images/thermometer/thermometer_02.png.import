@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bin.png-1f96bae9de8585c5e5779929f4ad9874.stex"
+path="res://.import/thermometer_02.png-abdfe676a6fa1d91df6b34be790cdd46.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/trashbin/bin.png"
-dest_files=[ "res://.import/bin.png-1f96bae9de8585c5e5779929f4ad9874.stex" ]
+source_file="res://images/thermometer/thermometer_02.png"
+dest_files=[ "res://.import/thermometer_02.png-abdfe676a6fa1d91df6b34be790cdd46.stex" ]
 
 [params]
 
