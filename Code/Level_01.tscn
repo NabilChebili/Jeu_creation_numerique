@@ -76,15 +76,15 @@ animations = [ {
 "name": "Still",
 "speed": 1.0
 }, {
-"frames": [ ExtResource( 33 ), ExtResource( 26 ), ExtResource( 28 ), ExtResource( 36 ), ExtResource( 27 ), ExtResource( 31 ), ExtResource( 39 ) ],
+"frames": [ ExtResource( 33 ), ExtResource( 33 ), ExtResource( 31 ), ExtResource( 31 ), ExtResource( 42 ), ExtResource( 42 ) ],
 "loop": true,
-"name": "Jump_right",
-"speed": 4.0
+"name": "Jump",
+"speed": 2.0
 }, {
-"frames": [ ExtResource( 7 ), ExtResource( 12 ), ExtResource( 11 ), ExtResource( 1 ), ExtResource( 13 ), ExtResource( 8 ), ExtResource( 20 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 14 ) ],
+"frames": [ ExtResource( 6 ) ],
 "loop": true,
-"name": "run_right",
-"speed": 10.0
+"name": "Shooting",
+"speed": 0.1
 }, {
 "frames": [ ExtResource( 23 ), ExtResource( 18 ), ExtResource( 21 ), ExtResource( 19 ), ExtResource( 25 ), ExtResource( 15 ), ExtResource( 24 ), ExtResource( 22 ), ExtResource( 17 ), ExtResource( 16 ) ],
 "loop": true,
@@ -96,15 +96,15 @@ animations = [ {
 "name": "Jump_left",
 "speed": 4.0
 }, {
-"frames": [ ExtResource( 6 ) ],
+"frames": [ ExtResource( 33 ), ExtResource( 26 ), ExtResource( 28 ), ExtResource( 36 ), ExtResource( 27 ), ExtResource( 31 ), ExtResource( 39 ) ],
 "loop": true,
-"name": "Shooting",
-"speed": 0.1
+"name": "Jump_right",
+"speed": 4.0
 }, {
-"frames": [ ExtResource( 33 ), ExtResource( 33 ), ExtResource( 31 ), ExtResource( 31 ), ExtResource( 42 ), ExtResource( 42 ) ],
+"frames": [ ExtResource( 7 ), ExtResource( 12 ), ExtResource( 11 ), ExtResource( 1 ), ExtResource( 13 ), ExtResource( 8 ), ExtResource( 20 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 14 ) ],
 "loop": true,
-"name": "Jump",
-"speed": 2.0
+"name": "run_right",
+"speed": 10.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=3]
@@ -265,7 +265,7 @@ shape = SubResource( 4 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="YSort/Enemies/RigidBody2D"]
 frames = SubResource( 12 )
 animation = "Damaged"
-frame = 1
+frame = 4
 playing = true
 
 [node name="Background" type="Node2D" parent="YSort"]
@@ -283,7 +283,7 @@ z_index = -100
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="YSort/Background"]
 frames = SubResource( 13 )
-frame = 15
+frame = 11
 playing = true
 
 [node name="Background2" type="Node2D" parent="YSort"]
@@ -301,7 +301,7 @@ z_index = -100
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="YSort/Background2"]
 frames = SubResource( 13 )
-frame = 14
+frame = 10
 playing = true
 
 [node name="Platforms" type="Node2D" parent="YSort"]
@@ -454,7 +454,6 @@ shape = SubResource( 17 )
 position = Vector2( 305.466, 573.545 )
 
 [node name="Polygon2D" parent="YSort/Dog" instance=ExtResource( 64 )]
-visible = false
 position = Vector2( -645.466, -1473.55 )
 scale = Vector2( 2, 2 )
 z_index = 20
