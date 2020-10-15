@@ -7,7 +7,6 @@ export (int) var run_speed = 300
 var velocity = Vector2()
 
 # Called when the node enters the scene tree for the first time.
-func _physics_process(delta):
-	velocity.y = 0
-	$AnimatedSprite.play("default") # Replace with function body.
+func stop_anim():
+	$AnimatedSprite.stop("default") # Replace with function body.
 
