@@ -78,3 +78,6 @@ func shoot():
 
 func _on_Polygon2D_visibility_changed():
 	self.visible = true # Replace with function body.
+
+
+pass # Replace with function body.

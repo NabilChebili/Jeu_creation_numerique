@@ -3,6 +3,7 @@
 [ext_resource path="res://Interraction/DialogDog.gd" type="Script" id=1]
 
 [node name="Polygon2D" type="Polygon2D"]
+visible = false
 position = Vector2( 0.399383, -120.556 )
 scale = Vector2( 0.3, 0.3 )
 color = Color( 0.133333, 0.133333, 0.133333, 1 )
