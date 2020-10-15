@@ -1,0 +1,471 @@
+[gd_scene load_steps=83 format=2]
+
+[ext_resource path="res://Animation/images/SNES - Super Metroid - Samus Varia Suit - 99%_63.png" type="Texture" id=1]
+[ext_resource path="res://Textures/metroid png 2.png" type="Texture" id=2]
+[ext_resource path="res://KinematicBody2D.gd" type="Script" id=3]
+[ext_resource path="res://Texture piskel/platform.png" type="Texture" id=4]
+[ext_resource path="res://Animation background/frame_09_delay-0.1s.png" type="Texture" id=5]
+[ext_resource path="res://Animation/images/SNES - Super Metroid - Samus Varia Suit - 99%_21.png" type="Texture" id=6]
+[ext_resource path="res://Animation/images/SNES - Super Metroid - Samus Varia Suit - 99%_61.png" type="Texture" id=7]
+[ext_resource path="res://Animation/images/SNES - Super Metroid - Samus Varia Suit - 99%_71.png" type="Texture" id=8]
+[ext_resource path="res://Animation/images/SNES - Super Metroid - Samus Varia Suit - 99%_72.png" type="Texture" id=9]
+[ext_resource path="res://Animation/images/SNES - Super Metroid - Samus Varia Suit - 99%_77.png" type="Texture" id=10]
+[ext_resource path="res://Animation/images/SNES - Super Metroid - Samus Varia Suit - 99%_69.png" type="Texture" id=11]
+[ext_resource path="res://Animation/images/SNES - Super Metroid - Samus Varia Suit - 99%_62.png" type="Texture" id=12]
+[ext_resource path="res://Animation/images/SNES - Super Metroid - Samus Varia Suit - 99%_64.png" type="Texture" id=13]
+[ext_resource path="res://Animation/images/SNES - Super Metroid - Samus Varia Suit - 99%_78.png" type="Texture" id=14]
+[ext_resource path="res://Animation/images/SNES - Super Metroid - Samus Varia Suit - 99%_67.png" type="Texture" id=15]
+[ext_resource path="res://Animation/images/SNES - Super Metroid - Samus Varia Suit - 99%_75.png" type="Texture" id=16]
+[ext_resource path="res://Animation/images/SNES - Super Metroid - Samus Varia Suit - 99%_76.png" type="Texture" id=17]
+[ext_resource path="res://Animation/images/SNES - Super Metroid - Samus Varia Suit - 99%_59.png" type="Texture" id=18]
+[ext_resource path="res://Animation/images/SNES - Super Metroid - Samus Varia Suit - 99%_57.png" type="Texture" id=19]
+[ext_resource path="res://Animation/images/SNES - Super Metroid - Samus Varia Suit - 99%_70.png" type="Texture" id=20]
+[ext_resource path="res://Animation/images/SNES - Super Metroid - Samus Varia Suit - 99%_58.png" type="Texture" id=21]
+[ext_resource path="res://Animation/images/SNES - Super Metroid - Samus Varia Suit - 99%_65.png" type="Texture" id=22]
+[ext_resource path="res://Animation/images/SNES - Super Metroid - Samus Varia Suit - 99%_60.png" type="Texture" id=23]
+[ext_resource path="res://Animation/images/SNES - Super Metroid - Samus Varia Suit - 99%_66.png" type="Texture" id=24]
+[ext_resource path="res://Animation/images/SNES - Super Metroid - Samus Varia Suit - 99%_68.png" type="Texture" id=25]
+[ext_resource path="res://Animation/images/SNES - Super Metroid - Samus Varia Suit - 99%_86.png" type="Texture" id=26]
+[ext_resource path="res://Animation/images/SNES - Super Metroid - Samus Varia Suit - 99%_95.png" type="Texture" id=27]
+[ext_resource path="res://Animation/images/SNES - Super Metroid - Samus Varia Suit - 99%_87.png" type="Texture" id=28]
+[ext_resource path="res://Animation/images/SNES - Super Metroid - Samus Varia Suit - 99%_82.png" type="Texture" id=29]
+[ext_resource path="res://Animation/images/SNES - Super Metroid - Samus Varia Suit - 99%_83.png" type="Texture" id=30]
+[ext_resource path="res://Animation/images/SNES - Super Metroid - Samus Varia Suit - 99%_93.png" type="Texture" id=31]
+[ext_resource path="res://Animation/images/SNES - Super Metroid - Samus Varia Suit - 99%_92.png" type="Texture" id=32]
+[ext_resource path="res://Animation/images/SNES - Super Metroid - Samus Varia Suit - 99%_85.png" type="Texture" id=33]
+[ext_resource path="res://Animation/images/SNES - Super Metroid - Samus Varia Suit - 99%_89.png" type="Texture" id=34]
+[ext_resource path="res://Dog.tscn" type="PackedScene" id=35]
+[ext_resource path="res://Animation/images/SNES - Super Metroid - Samus Varia Suit - 99%_88.png" type="Texture" id=36]
+[ext_resource path="res://Animation/images/SNES - Super Metroid - Samus Varia Suit - 99%_84.png" type="Texture" id=37]
+[ext_resource path="res://Animation/images/SNES - Super Metroid - Samus Varia Suit - 99%_91.png" type="Texture" id=38]
+[ext_resource path="res://Animation/images/SNES - Super Metroid - Samus Varia Suit - 99%_96.png" type="Texture" id=39]
+[ext_resource path="res://Animation/images/SNES - Super Metroid - Samus Varia Suit - 99%_90.png" type="Texture" id=40]
+[ext_resource path="res://Animation/images/SNES - Super Metroid - Samus Varia Suit - 99%_8 - Copie.png" type="Texture" id=41]
+[ext_resource path="res://Animation/images/SNES - Super Metroid - Samus Varia Suit - 99%_101.png" type="Texture" id=42]
+[ext_resource path="res://Interraction/Interraction.tscn" type="PackedScene" id=43]
+[ext_resource path="res://Textures/metroids png 1.png" type="Texture" id=44]
+[ext_resource path="res://metroid.gd" type="Script" id=45]
+[ext_resource path="res://Test Résolution/120916713_699553690909359_7334706147192269768_n.png" type="Texture" id=46]
+[ext_resource path="res://Textures/metroid damaged - Copie (2).png" type="Texture" id=47]
+[ext_resource path="res://Animation background/frame_07_delay-0.1s.png" type="Texture" id=48]
+[ext_resource path="res://Animation background/frame_02_delay-0.1s.png" type="Texture" id=49]
+[ext_resource path="res://Animation background/frame_03_delay-0.1s.png" type="Texture" id=50]
+[ext_resource path="res://Animation background/frame_12_delay-0.1s.png" type="Texture" id=51]
+[ext_resource path="res://Animation background/frame_04_delay-0.1s.png" type="Texture" id=52]
+[ext_resource path="res://Animation background/frame_00_delay-0.1s.png" type="Texture" id=53]
+[ext_resource path="res://Animation background/frame_14_delay-0.1s.png" type="Texture" id=54]
+[ext_resource path="res://Animation background/frame_06_delay-0.1s.png" type="Texture" id=55]
+[ext_resource path="res://Animation background/frame_15_delay-0.02s.png" type="Texture" id=56]
+[ext_resource path="res://Animation background/frame_01_delay-0.1s.png" type="Texture" id=57]
+[ext_resource path="res://Animation background/frame_05_delay-0.1s.png" type="Texture" id=58]
+[ext_resource path="res://Animation background/frame_08_delay-0.1s.png" type="Texture" id=59]
+[ext_resource path="res://Animation background/frame_10_delay-0.1s.png" type="Texture" id=60]
+[ext_resource path="res://Animation background/frame_11_delay-0.1s.png" type="Texture" id=61]
+[ext_resource path="res://Animation background/frame_13_delay-0.1s.png" type="Texture" id=62]
+[ext_resource path="res://Background.gd" type="Script" id=63]
+[ext_resource path="res://Interraction/Dialog.tscn" type="PackedScene" id=64]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 15, 20 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 41 ) ],
+"loop": true,
+"name": "Still",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 23 ), ExtResource( 18 ), ExtResource( 21 ), ExtResource( 19 ), ExtResource( 25 ), ExtResource( 15 ), ExtResource( 24 ), ExtResource( 22 ), ExtResource( 17 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "run_left",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 12 ), ExtResource( 11 ), ExtResource( 1 ), ExtResource( 13 ), ExtResource( 8 ), ExtResource( 20 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 14 ) ],
+"loop": true,
+"name": "run_right",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 37 ), ExtResource( 30 ), ExtResource( 29 ), ExtResource( 38 ), ExtResource( 32 ), ExtResource( 40 ), ExtResource( 34 ) ],
+"loop": true,
+"name": "Jump_left",
+"speed": 4.0
+}, {
+"frames": [ ExtResource( 33 ), ExtResource( 33 ), ExtResource( 31 ), ExtResource( 31 ), ExtResource( 42 ), ExtResource( 42 ) ],
+"loop": true,
+"name": "Jump",
+"speed": 2.0
+}, {
+"frames": [ ExtResource( 6 ) ],
+"loop": true,
+"name": "Shooting",
+"speed": 0.1
+}, {
+"frames": [ ExtResource( 33 ), ExtResource( 26 ), ExtResource( 28 ), ExtResource( 36 ), ExtResource( 27 ), ExtResource( 31 ), ExtResource( 39 ) ],
+"loop": true,
+"name": "Jump_right",
+"speed": 4.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 10, 24 )
+
+[sub_resource type="CircleShape2D" id=4]
+custom_solver_bias = 1.0
+radius = 44.0
+
+[sub_resource type="AtlasTexture" id=5]
+flags = 4
+atlas = ExtResource( 44 )
+region = Rect2( 300, 0, 100, 101 )
+
+[sub_resource type="AtlasTexture" id=6]
+flags = 4
+atlas = ExtResource( 44 )
+region = Rect2( 200, 0, 100, 101 )
+
+[sub_resource type="AtlasTexture" id=7]
+flags = 4
+atlas = ExtResource( 44 )
+region = Rect2( 100, 0, 100, 101 )
+
+[sub_resource type="AtlasTexture" id=8]
+flags = 4
+atlas = ExtResource( 47 )
+region = Rect2( 300, 0, 100, 101 )
+
+[sub_resource type="AtlasTexture" id=9]
+flags = 4
+atlas = ExtResource( 44 )
+region = Rect2( 300, 0, 100, 101 )
+
+[sub_resource type="AtlasTexture" id=10]
+flags = 4
+atlas = ExtResource( 44 )
+region = Rect2( 200, 0, 100, 101 )
+
+[sub_resource type="AtlasTexture" id=11]
+flags = 4
+atlas = ExtResource( 44 )
+region = Rect2( 100, 0, 100, 101 )
+
+[sub_resource type="SpriteFrames" id=12]
+animations = [ {
+"frames": [ SubResource( 5 ), SubResource( 6 ), SubResource( 7 ) ],
+"loop": true,
+"name": "idle",
+"speed": 4.0
+}, {
+"frames": [ SubResource( 8 ), SubResource( 8 ), SubResource( 9 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ) ],
+"loop": true,
+"name": "Damaged",
+"speed": 4.0
+} ]
+
+[sub_resource type="SpriteFrames" id=13]
+animations = [ {
+"frames": [ ExtResource( 53 ), ExtResource( 57 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 52 ), ExtResource( 58 ), ExtResource( 55 ), ExtResource( 48 ), ExtResource( 59 ), ExtResource( 5 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 51 ), ExtResource( 62 ), ExtResource( 54 ), ExtResource( 56 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=14]
+extents = Vector2( 840, 200 )
+
+[sub_resource type="RectangleShape2D" id=15]
+extents = Vector2( 210, 210 )
+
+[sub_resource type="RectangleShape2D" id=16]
+extents = Vector2( 420, 110 )
+
+[sub_resource type="RectangleShape2D" id=17]
+extents = Vector2( 420, 100 )
+
+[sub_resource type="RectangleShape2D" id=18]
+extents = Vector2( 250, 300 )
+
+[node name="World" type="Node2D"]
+
+[node name="YSort" type="YSort" parent="."]
+
+[node name="Player" type="Node2D" parent="YSort"]
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="YSort/Player"]
+position = Vector2( -340, 500 )
+scale = Vector2( 2, 2 )
+collision_mask = 2
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Player/KinematicBody2D"]
+modulate = Color( 0.631373, 0.870588, 0.415686, 1 )
+self_modulate = Color( 0.623529, 0.756863, 0.560784, 1 )
+position = Vector2( 0, -2 )
+shape = SubResource( 1 )
+
+[node name="Position2D" type="Position2D" parent="YSort/Player/KinematicBody2D"]
+position = Vector2( 14, -60 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="YSort/Player/KinematicBody2D"]
+frames = SubResource( 2 )
+animation = "Still"
+
+[node name="Camera2D" type="Camera2D" parent="YSort/Player/KinematicBody2D"]
+position = Vector2( 100, -80 )
+scale = Vector2( 0.5, 0.5 )
+rotating = true
+current = true
+zoom = Vector2( 1.4, 1 )
+limit_left = -640
+limit_top = -130
+limit_right = 2800
+limit_bottom = 720
+drag_margin_v_enabled = true
+drag_margin_left = 0.8
+drag_margin_top = 1.0
+drag_margin_right = 0.0
+drag_margin_bottom = 1.0
+editor_draw_limits = true
+editor_draw_drag_margin = true
+
+[node name="HurtBox" type="Area2D" parent="YSort/Player/KinematicBody2D"]
+collision_mask = 34
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Player/KinematicBody2D/HurtBox"]
+position = Vector2( 0, -2 )
+shape = SubResource( 3 )
+
+[node name="Bubble" parent="YSort/Player/KinematicBody2D" instance=ExtResource( 43 )]
+collision_layer = 0
+
+[node name="Enemies" type="Node2D" parent="YSort"]
+
+[node name="RigidBody2D" type="RigidBody2D" parent="YSort/Enemies"]
+position = Vector2( 400, 200 )
+collision_layer = 2147483652
+collision_mask = 7
+gravity_scale = 0.01
+custom_integrator = true
+script = ExtResource( 45 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="YSort/Enemies/RigidBody2D"]
+visible = false
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Enemies/RigidBody2D"]
+position = Vector2( 0, -5 )
+shape = SubResource( 4 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="YSort/Enemies/RigidBody2D"]
+frames = SubResource( 12 )
+animation = "Damaged"
+frame = 4
+playing = true
+
+[node name="Background" type="Node2D" parent="YSort"]
+position = Vector2( 320, 300 )
+scale = Vector2( 2, 1.6 )
+z_index = -100
+script = ExtResource( 63 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="YSort/Background"]
+show_behind_parent = true
+z_index = -100
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="YSort/Background"]
+frames = SubResource( 13 )
+frame = 9
+playing = true
+
+[node name="Background2" type="Node2D" parent="YSort"]
+position = Vector2( 2000, 300 )
+scale = Vector2( 2, 1.6 )
+z_index = -100
+script = ExtResource( 63 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="YSort/Background2"]
+show_behind_parent = true
+z_index = -100
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="YSort/Background2"]
+frames = SubResource( 13 )
+frame = 8
+playing = true
+
+[node name="Platforms" type="Node2D" parent="YSort"]
+position = Vector2( -200, 80 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="YSort/Platforms"]
+position = Vector2( 427.415, 593.646 )
+scale = Vector2( 0.2, 0.2 )
+collision_layer = 32
+collision_mask = 3
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="YSort/Platforms/StaticBody2D2"]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Platforms/StaticBody2D2"]
+visible = false
+position = Vector2( 50, -110 )
+shape = SubResource( 14 )
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="YSort/Platforms"]
+position = Vector2( -150, 593.646 )
+scale = Vector2( 0.7, 0.4 )
+collision_layer = 32
+collision_mask = 3
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="YSort/Platforms/StaticBody2D5"]
+scale = Vector2( 0.5, 2 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Platforms/StaticBody2D5"]
+visible = false
+position = Vector2( 16, -105 )
+shape = SubResource( 15 )
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="YSort/Platforms"]
+position = Vector2( 803.415, 593.646 )
+scale = Vector2( 0.4, 0.4 )
+collision_layer = 32
+collision_mask = 3
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="YSort/Platforms/StaticBody2D4"]
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Platforms/StaticBody2D4"]
+visible = false
+position = Vector2( 30, -52 )
+shape = SubResource( 16 )
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="YSort/Platforms"]
+position = Vector2( 124.893, 620 )
+scale = Vector2( 0.2, 1 )
+collision_layer = 32
+collision_mask = 3
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="YSort/Platforms/StaticBody2D3"]
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Platforms/StaticBody2D3"]
+visible = false
+position = Vector2( 30, -60 )
+shape = SubResource( 17 )
+
+[node name="Platforms2" type="Node2D" parent="YSort"]
+position = Vector2( 1200, 40 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="YSort/Platforms2"]
+position = Vector2( 427.415, 593.646 )
+scale = Vector2( 0.2, 0.2 )
+collision_layer = 32
+collision_mask = 3
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="YSort/Platforms2/StaticBody2D2"]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Platforms2/StaticBody2D2"]
+visible = false
+position = Vector2( 50, -110 )
+shape = SubResource( 14 )
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="YSort/Platforms2"]
+position = Vector2( -150, 593.646 )
+scale = Vector2( 0.7, 0.4 )
+collision_layer = 32
+collision_mask = 3
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="YSort/Platforms2/StaticBody2D5"]
+scale = Vector2( 0.5, 2 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Platforms2/StaticBody2D5"]
+visible = false
+position = Vector2( 16, -105 )
+shape = SubResource( 15 )
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="YSort/Platforms2"]
+position = Vector2( 803.415, 593.646 )
+scale = Vector2( 0.4, 0.4 )
+collision_layer = 32
+collision_mask = 3
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="YSort/Platforms2/StaticBody2D4"]
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Platforms2/StaticBody2D4"]
+visible = false
+position = Vector2( 30, -52 )
+shape = SubResource( 16 )
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="YSort/Platforms2"]
+position = Vector2( 124.893, 620 )
+scale = Vector2( 0.2, 1 )
+collision_layer = 32
+collision_mask = 3
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="YSort/Platforms2/StaticBody2D3"]
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Platforms2/StaticBody2D3"]
+visible = false
+position = Vector2( 30, -60 )
+shape = SubResource( 17 )
+
+[node name="Dog" parent="YSort" instance=ExtResource( 35 )]
+position = Vector2( 305.466, 573.545 )
+
+[node name="Polygon2D" parent="YSort/Dog" instance=ExtResource( 64 )]
+position = Vector2( -645.466, -1473.55 )
+scale = Vector2( 2, 2 )
+z_index = 20
+
+[node name="StaticBody2D" type="StaticBody2D" parent="YSort"]
+position = Vector2( 654.881, 539.391 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Sprite" type="Sprite" parent="YSort/StaticBody2D"]
+position = Vector2( 0, 37.4578 )
+texture = ExtResource( 46 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/StaticBody2D"]
+position = Vector2( 0, 35 )
+shape = SubResource( 18 )
+[connection signal="visibility_changed" from="YSort/Dog/Polygon2D" to="YSort/Player/KinematicBody2D" method="_on_Polygon2D_visibility_changed"]
