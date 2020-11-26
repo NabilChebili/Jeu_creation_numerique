@@ -24,6 +24,7 @@ func decrease_health():
 	health-=1
 	update_health()
 	if health == 0:
+		## Death
 		health = 6
 
 func update_health():
@@ -35,6 +36,11 @@ func update_health():
 
 func increase_temperature():
 	temperature+=1
+	update_thermometer()
+
+func decrease_temperature():
+	temperature-=1
+	update_thermometer()
 
 func update_thermometer():
 	thermometer_file = "res://images/thermometer/thermometer_0" + str(temperature) + ".png"
