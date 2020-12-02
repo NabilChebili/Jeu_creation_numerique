@@ -1,4 +1,4 @@
-# EasyLife - Métiers de la Création Numérique
+# Green Life Adventure - Métiers de la Création Numérique
 
 ## Introduction
 
