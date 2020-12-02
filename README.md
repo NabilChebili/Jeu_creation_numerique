@@ -7,7 +7,8 @@ Ce projet est un jeu destiné aux jeunes enfants. Ce jeu vise à permettre aux p
 
 ## Installation
 
-À expliquer
+L'installation est un point primordial qu'il nous fallait simplifier au vu de l'utilisation que éducative pour jeunes enfants que nous voulons en faire. C'est pour cela que nous exporterons les différentes mises à jour majeures du jeu nous même et créerons des '__releases__' directement sur GitHub. Ces releases devraient être des .exe, il suffira alors de télécharger le fichier et de l'exécuter sur votre machine !
+Si vous voulez toutefois build le projet vous-même, c'est tout à fait possible en téléchargeant le code ou en clonant le repository git, en ouvrant le projet sur Godot et en le buildant depuis le logiciel !
 
 ## Comment jouer
 
