@@ -2,10 +2,8 @@ extends KinematicBody2D
 
 export (int) var run_speed = 300
 export (int) var jump_speed = -800
-export (int) var gravity = 1200
+export (int) var gravity = 1400
 
-
-var Bullet = preload("res://Bullet.tscn")
 
 var velocity = Vector2()
 var jumping = false
@@ -28,53 +26,46 @@ func get_input():
 	var left = Input.is_action_pressed('ui_left')
 #	var jump = Input.is_action_just_pressed('ui_select')
 	var jump = Input.is_action_pressed('Jump')
-	var shoot = Input.is_action_just_pressed('shoot')
 	var Talk = Input.is_action_just_pressed('Talk')
+	var Interact = Input.is_action_just_pressed('Interact')
 
-	if jump and is_on_floor():
-#		jumping = true
-		$AnimatedSprite.play("Jump")
+	if jump && is_on_floor():
+		if is_on_floor():
+			print(is_on_floor())
+			$AnimatedSprite.play("Still2")
+		velocity.y = jump_speed
+
+	elif right :
+		$AnimatedSprite.play("run_right2")
+		velocity.x += run_speed
+
+	elif jump && is_on_floor() && right:
+		while not is_on_floor():
+			$AnimatedSprite.play("Still2")
+		velocity.x += run_speed
+		velocity.y = jump_speed
+
+	elif left :
+		$AnimatedSprite.play("run_left2")
+		velocity.x -= run_speed
+
+
+	elif jump and is_on_floor() && left:
+		while not is_on_floor():
+			$AnimatedSprite.play("Still2")
+		velocity.x += run_speed
 		velocity.y = jump_speed
 
 
-
-	elif right :
-		$AnimatedSprite.play("run_right")
-		velocity.x += run_speed
-		if jump and is_on_floor():
-			$AnimatedSprite.stop()
-			while not is_on_floor():
-				$AnimatedSprite.play("Jump_right")
-			velocity.x += run_speed
-			velocity.y = jump_speed
-
-	elif left :
-		$AnimatedSprite.play("run_left")
-		velocity.x -= run_speed
-		if jump and is_on_floor():
-			$AnimatedSprite.stop()
-			$AnimatedSprite.play("Jump_left")
-			velocity.x += run_speed
-			velocity.y = jump_speed
-
-	elif shoot :
-		$AnimatedSprite.play("Shooting")
-		shoot()
-		
-	elif Talk :
-		_on_Polygon2D_visibility_changed()
+	elif Interact:
+		if $RayCast2D.is_colliding():
+			var collider = $RayCast2D.get_collider()
+			if collider.is_in_group("Interactable"):
+				collider.interact()
 
 
 	else:
-		$AnimatedSprite.play("Still")
-
-func shoot():
-	var b = Bullet.instance()
-	b.start($Position2D.global_position)
-	get_parent().add_child(b)
+		$AnimatedSprite.play("Still2")
 
 
 
-
-func _on_Polygon2D_visibility_changed():
-	self.visible = true # Replace with function body.

@@ -3,17 +3,19 @@
 [ext_resource path="res://Interraction/DialogDog.gd" type="Script" id=1]
 
 [node name="Polygon2D" type="Polygon2D"]
-position = Vector2( 0.399383, -120.556 )
-scale = Vector2( 0.3, 0.3 )
+position = Vector2( -655.068, -2400 )
+scale = Vector2( 5, 4 )
+z_index = 100
 color = Color( 0.133333, 0.133333, 0.133333, 1 )
 polygon = PoolVector2Array( 127.999, 446.021, 127.917, 639.921, 703.523, 639.679, 703.401, 446.006 )
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
-margin_left = 154.0
-margin_top = 471.0
-margin_right = 677.0
-margin_bottom = 608.0
+margin_left = 139.0
+margin_top = 452.0
+margin_right = 694.0
+margin_bottom = 630.0
 bbcode_enabled = true
+tab_size = 20
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
