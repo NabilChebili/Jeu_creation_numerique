@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=2]
+[gd_scene load_steps=47 format=2]
 
 [ext_resource path="res://PlayerScene.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Textures/metroid png 2.png" type="Texture" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://Fond/Décor1.png" type="Texture" id=9]
 [ext_resource path="res://Fond/Décor1 - Copie.png" type="Texture" id=10]
 [ext_resource path="res://chips.tscn" type="PackedScene" id=11]
+[ext_resource path="res://HUD.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Dog.tscn" type="PackedScene" id=35]
 [ext_resource path="res://Textures/metroids png 1.png" type="Texture" id=44]
 [ext_resource path="res://metroid.gd" type="Script" id=45]
@@ -113,6 +114,8 @@ animations = [ {
 
 [node name="YSort" type="YSort" parent="."]
 
+[node name="Control" parent="YSort" instance=ExtResource( 12 )]
+
 [node name="Player" type="Node2D" parent="YSort"]
 position = Vector2( 386.621, -361.304 )
 scale = Vector2( 2, 2 )
@@ -163,7 +166,7 @@ shape = SubResource( 1 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="YSort/Enemies/RigidBody2D"]
 frames = SubResource( 9 )
 animation = "Damaged"
-frame = 3
+frame = 1
 playing = true
 
 [node name="Platforms" type="Node2D" parent="YSort"]

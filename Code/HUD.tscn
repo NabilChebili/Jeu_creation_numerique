@@ -15,11 +15,11 @@ __meta__ = {
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="thermometer" type="Sprite" parent="CanvasLayer"]
-position = Vector2( 1813.56, 138.687 )
-scale = Vector2( 0.20028, 0.20028 )
+position = Vector2( 1173.85, 114.497 )
+scale = Vector2( 0.119778, 0.119778 )
 texture = ExtResource( 1 )
 
 [node name="health" type="Sprite" parent="CanvasLayer"]
-position = Vector2( 960, 995 )
-scale = Vector2( 0.269972, 0.269972 )
+position = Vector2( 678.905, 757.486 )
+scale = Vector2( 0.135305, 0.135305 )
 texture = ExtResource( 3 )
