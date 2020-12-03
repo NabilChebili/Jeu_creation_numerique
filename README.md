@@ -12,7 +12,16 @@ Si vous voulez toutefois build le projet vous-même, c'est tout à fait possible
 
 ## Comment jouer
 
-À expliquer
+Le joueur incarne Bob, un personnage dont le but est de ramasser les déchets qui se trouvent sur son chemin. Bob vieillit au fil du temps, et l'environnement dans lequel il se trouve va être modifié selon ses actions : si il ne ramasse pas les déchets le monde va petit à petit se réchauffer et il sera de plus en plus compliqué pour lui d'avancer.
+Les commandes sont simples et intuitives :
+
+- `flèches directionnelles` : Permettent de se déplacer
+- `barre d'espace` : Permet de sauter
+- `passer sur des déchets` : Permet de les ramasser
+- `entrée` : Permet de lancer un dialogue
+- `touche 't'` : Permet d'avancer dans les dialogues
+
+Le but de Bob est donc de ramasser le plus de déchets possibles ! Attention toutefois : il est facile de glisser et de tomber d'une plateforme...
 
 ## Contributeurs
 
