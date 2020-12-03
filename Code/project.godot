@@ -25,11 +25,11 @@ config/icon="res://icon.png"
 
 [display]
 
-window/size/width=1280
-window/size/height=720
+window/size/width=1350
+window/size/height=800
 window/size/always_on_top=true
-window/size/test_width=1000
-window/size/test_height=600
+window/size/test_width=1350
+window/size/test_height=800
 
 [input]
 
